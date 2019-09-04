@@ -4,7 +4,6 @@
     "source.fixAll.tslint": true
   },
   "prettier.printWidth": 160,
-  "prettier.singleQuote": true,
   "cSpell.words": ["Parens", "quotemark", "vuex"],
   "prettier.trailingComma": "es5"
 }
