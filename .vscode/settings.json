@@ -3,7 +3,34 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.tslint": true
   },
-  "prettier.printWidth": 160,
-  "cSpell.words": ["Parens", "quotemark", "vuex"],
-  "prettier.trailingComma": "es5"
+  "prettier.printWidth": 80,
+  "cSpell.words": [
+    "Parens",
+    "antd",
+    "quotemark",
+    "vuex"
+  ],
+  "prettier.trailingComma": "es5",
+  "cSpell.enabledLanguageIds": [
+    "css",
+    "git-commit",
+    "html",
+    "ignore",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "markdown",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "vue-html",
+    "vue-postcss",
+    "wxml",
+    "wxs",
+    "yaml",
+    "yml"
+  ]
 }
