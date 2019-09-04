@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "cSpell.words": [
+    "Parens",
+    "quotemark",
+    "vuex"
+  ]
+}
