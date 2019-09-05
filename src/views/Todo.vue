@@ -10,6 +10,7 @@
         @onSave="handleSave"
         @onEdit="handleEdit"
         @onCancel="handleCancel"
+        @onComplete="handleComplete"
       />
     </ul>
   </div>
@@ -46,6 +47,9 @@ export default class Todo extends Vue {
   }
   public handleCancel() {
     this.editingIndex = -1;
+  }
+  public handleComplete({ index, complete }) {
+    this.list[index].complete = complete;
   }
 }
 </script>

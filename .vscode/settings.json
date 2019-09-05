@@ -32,5 +32,6 @@
     "wxs",
     "yaml",
     "yml"
-  ]
+  ],
+  "prettier.jsxBracketSameLine": true
 }

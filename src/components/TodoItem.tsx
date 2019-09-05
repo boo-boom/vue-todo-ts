@@ -5,6 +5,10 @@ interface Item {
   complete: boolean;
 }
 
+const styleComplete = {
+  textDecoration: "line-through",
+};
+
 @Component({
   name: "TodoItem",
 })
@@ -39,13 +43,21 @@ export default class TodoItem extends Vue {
     };
   }
 
-  public edit() {
+  public edit(e) {
     this.$emit("onEdit", this.index);
   }
 
   @Emit("onCancel")
   public cancel() {
     return null;
+  }
+
+  @Emit("onComplete")
+  public complete() {
+    return {
+      index: this.index,
+      complete: !this.item.complete,
+    };
   }
 
   protected render() {
@@ -59,7 +71,11 @@ export default class TodoItem extends Vue {
           </div>
         ) : (
           <div>
-            <span>{this.item.text}</span>
+            <span
+              style={this.item.complete ? styleComplete : ""}
+              onClick={this.complete}>
+              {this.item.text}
+            </span>
             <a-icon type="edit" nativeOn-click={this.edit} />
           </div>
         )}
